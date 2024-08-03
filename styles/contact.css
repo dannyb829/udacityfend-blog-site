@@ -1,0 +1,34 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-link {
+    margin-bottom:20px;
+    max-width: 250px;
+    background-color: #0D001C;
+    padding: 10px;
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    transform: scale(1.01);
+    transition-duration: .5s;
+}
+
+.contact-icon {
+    max-width: 3rem;
+    border-radius: 1rem;
+    filter: invert(98%) sepia(37%) saturate(2%) hue-rotate(288deg) brightness(110%) contrast(101%);
+}
+
+.contact-text {
+    display: inline-block;
+    color: #ffffff;
+    margin: 0;
+    font-size: 2rem;
+    padding-left: 15px;
+}

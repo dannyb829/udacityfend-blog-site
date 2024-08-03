@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Daniels Personal Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/article.css">
+    <link rel="stylesheet" type="text/css" href="../styles/medium-screen.css">
+    <link rel="stylesheet" type="text/css" href="../styles/large-screen.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="contact.html">CONTACT</a>
+            <a href="blog-posts.html" id="activated">BLOG POSTS</a>
+            <a href="about.html">ABOUT</a>
+        </nav>
+    </header>
+    <aside>
+
+    </aside>
+    <main>
+        <section id="article-page">
+            <div class="article-image img-3 padding">
+                <h1 class="article-title">TRAILS IN RUBY RAILS- CONVENTION OVER CONFIGURATION!</h1>
+                <h2 class="article-author">BY: Daniel Brito</h2>
+            </div>
+            <div class="article-main">
+                <div class="article-left padding">
+                    <p><strong class="article-subheading">Visualize</strong> yourself in a maze. Blindfolded. You may
+                        have been here before, and you can kinda guess that you have to get to the center. The path to
+                        your goal is disorienting and treacherous. You could try to break through the walls enough times
+                        to do this but that might leave you hurt and it might just be too much work. No. You know what
+                        to do here. It’s left, a right, left, left right left and in a jiffy you are where you need to
+                        be. Many have taken this path, those that have been there have bestowed upon you the knowledge.
+                        No struggle needed.</p>
+                    <p>Snapping back to reality, unfortunately, we are not wizards traversing the mystical unknown,
+                        warding off evils, fighting our way through a maze until we find the golden egg… darn! Probably
+                        just a coding dream, a metaphor for passing your rspecs, following convention over configuration
+                        in the attempt to access the golden utopia of having your code work. We all do things
+                        differently, we are all individuals. But many of us follow a certain pattern because they have
+                        shown repeated results. We drive with one foot, so we can avoid confusing the brake and gas
+                        pedals. We paint up and down to finish quickly, instead of left and right. And we take the same
+                        way to work/school every day because, for the most part, it’s what gets us there the quickest.
+                    </p>
+                    <h3 class="article-subheading">Convention</h3>
+                    <p>Enough analogies. As the godfather of rails imagined and ultimately created for our use, rails
+                        heavily implements most of its code for certain conventions that iron out any complications and
+                        long drawn out coding, making our lives easier. Following these conventions, primarily naming
+                        and file structures, effectively allows us to have files layed out for that would otherwise have
+                        taken time to create and type out. As soon as you type out rails new <file_name> — api you have
+                            your rails back-end.</p>
+                </div>
+                <div class="article-right padding">
+                    <p> Not only is this done for us. but defining routes in the way templated by rails is a one-liner.
+                        ‘resources’ <model_name> takes care of your crud routes, leaving you only to define its methods
+                            within your controllers. Bear in mind that doing this requires you to use the method naming
+                            conventions e.g for your GET actions you need to have methods #index (for retrieving all
+                            entries for a table) and #show (for retrieving a specific entry). Imagine having your code
+                            mostly typed out for you! imagine no more.</p>
+                    <h3 class="article-subheading">Configuration</h3>
+                    <p>Bear also in mind that we are developers. So we do much tweaking and tailoring to our needs.
+                        There is many a case in which we would need to create custom methods that using the conventions
+                        simply do not provide. But we as developers also love reusability, and that's something that (if
+                        following RESTful conventions) allows for. Aside from that, deviating from the conventions
+                        leaves a lot of room for guessing and testing your code, which given any time constraints is not
+                        what you want. Moreover working with a team begs for a general consensus on how this code should
+                        look, what better way than one that we probably have all probably learned. Your custom methods
+                        are better spent on handling those special cases should they arise.</p>
+                    <h3 class="article-subheading">Conclusion</h3>
+                    <p>With this awareness of the time you could be saving, you are better equipped for any project in
+                        that you’ll be able to easily work with others, and very quickly put together things without
+                        having to memorize so much. Giving you time after to focus on handling special cases. Not just
+                        on rails, but in any language, library, or framework, knowing what the conventions are, gives
+                        you the predictability your code needs.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

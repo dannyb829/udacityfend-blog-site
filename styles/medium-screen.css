@@ -1,0 +1,11 @@
+@media screen 
+and (min-width: 751px) 
+and (max-width:1285px) {
+    
+    body{
+        grid-template-rows: 5vh auto;
+        grid-template-areas: "h h h h h h h h h h h h"
+                             "a a a a m m m m m m m m"
+    }
+
+}

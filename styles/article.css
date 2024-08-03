@@ -1,0 +1,56 @@
+#article-page {
+    display: grid;
+    grid-template-rows: 150px auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "t1 t1 t1 t1 t1 t1"
+                         "t5 t5 t5 t5 t5 t5";
+}
+
+.article-main {
+    grid-area: t5;
+}
+
+.article-subheading {
+    color:purple
+}
+
+.article-title {
+    margin-top: 0;
+    color: white;
+    text-shadow: #363021 2px 5px;
+    font-size: 2em;
+}
+
+.article-author{
+    color: white;
+    text-shadow: #363021 2px 5px;
+    font-size: 2em;
+}
+
+.article-image {
+    background-size:cover;
+    overflow: hidden;
+
+    grid-area: t1
+}
+
+.article-left {
+    grid-area: t3;
+}
+
+.article-right {
+    grid-area: t4;
+}
+
+.padding {
+    padding:0 10px 10px 10px;
+}
+
+.inline {
+    display: inline;
+}
+
+.article-main:nth-child(n +2) {
+    font-size: 1.5em;
+    font-weight: lighter;
+}

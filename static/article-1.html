@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Daniels Personal Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/article.css">
+    <link rel="stylesheet" type="text/css" href="../styles/medium-screen.css">
+    <link rel="stylesheet" type="text/css" href="../styles/large-screen.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="contact.html">CONTACT</a>
+            <a href="blog-posts.html" id="activated">BLOG POSTS</a>
+            <a href="about.html">ABOUT</a>
+        </nav>
+    </header>
+    <aside>
+
+    </aside>
+    <main>
+        <section id="article-page">
+            <div class="article-image img-1 padding">
+                <h1 class="article-title">RHYTHM AND EXECUTION FLOW</h1>
+                <h2 class="article-author">BY: Daniel Brito</h2>
+            </div>
+            <div class="article-main">
+                <div class="article-left padding">
+                    <p><strong class="article-subheading">We</strong> all know how important doing things in the right
+                        order is. We wake up, brush our teeth, shower, then go to work. We do not go to work, shower
+                        then brush our teeth. This would surely result in your coworkers avoiding any communication or
+                        contact with you. We make sure that we are clean and smell good before we go to work. Oh no! we
+                        forgot to eat breakfast, erase everything go back and INSERT “eat breakfast”.” Whew, can’t work
+                        on an empty stomach… wait where are my keys???”. To avoid these troublesome situations, we keep
+                        an exact order of operations (routine if you will) that we executed at their respective required
+                        times. No, you are not eating breakfast at night, and no you are not taking your keys with you
+                        after work because how are you getting back into your house?</p>
+                    <h3 class="article-subheading">when_you_code</h3>
+                    <p>Coding in general is a very specific process. We very explicitly tell the computer what it is we
+                        need it to do and it meticulously reads and executes our code.. in order.. from top to bottom..
+                        from left to right. Any missing ends of inputs, parentheses, commas, etc., and your file will
+                        throw an error. Bad syntax is one thing we know that will mess up our code. But what if what it
+                        is we were typing didn’t particularly cause errors, but caused some unexpected behaviors? “Hello
+                        world! my name is nil ! nice to meet you !”. Hmmm, what can we guess went wrong here? A variable
+                        called name could have possibly been given nil as a value and only changed after this sentence
+                        was printed out. Jeez. Go back erase everything and make SURE that you give name a proper value
+                        before you go off using it any old place. “Hello world!, my name is Daniel !, nice to meet you
+                        !”. Much better. Not everything gives a syntax error, and if your code was 5000 lines long then
+                        finding this particular problem might have been a painstakingly long process.</p>
+                    <h3 class="article-subheading">timingItRight</h3>
+                    <p>Sometimes you want to hold off on taking certain actions when actually doing things. You might
+                        put together that perfect sandwich, but figure you are not hungry yet and want to eat it later
+                        in the day and put it in your lunch box. You’ll find that you might do the same thing sometimes
+                        with your functions. You put together that delicious function const tasteySandwich =
+                        (ingredients) => {console.log(“eat sandwich”)}. But the mood doesn’t strike just yet. Make sure
+                        you invoke tasteySandwich only when your onHungry event listener fires off like so -
+                        onHungry={tasteySandwich}. Say you want to eat this same sandwich every 30 sec (wanna see you
+                        try) how would you do that?? setInterval(tasteySandwich, 30000) should accomplish this if you
+                        are that hungry. What if you just wanted one sandwich after 30 sec? setTimeout(tasteySandwich,
+                        30000). When coding, all the tools are there for you to achieve specific timing and execution
+                        flow. It makes our programs just that much more robust.</p>
+                </div>
+                <div class="article-right padding">
+                    <h3 class="article-subheading">aRecentChallenge</h3>
+                    <p>Quite recently i came to this realization that coding in certain conditions and timers is very
+                        important if we are expecting our code to ALWAYS behave a certain way given any edge cases. I
+                        was working on a button for a music guessing game that would select an answer from a user. The
+                        problem was that there was a certain delay between when that button was clicked and the next
+                        would appear, leaving perfect room for the undesirable double click. This double click was
+                        causing answers to be submitted twice and it was driving me crazy. WHAT DO I DO?? After a few
+                        minutes of due diligence I realized that I could access the disabled property of my button ,
+                        disable it and voila!! Right? maybe not. I was still getting the issue. I decided to actually
+                        use my brain to deduce what was going on step by step.
+
+                        one, the user clicks the answer button.
+                        two, the event listener handles network requests and makes changes
+                        three, button is disabled
+                        four, between a first click and when changes are actually made to the DOM there is a fraction of
+                        a second delay due to asynchronous network requests.
+                        five, in this time it is possible for the second click to trigger everything again</p>
+                    <h3 class="article-subheading">realization</h3>
+                    <p>Okay so I disabled the button doesn’t that mean I can’t click it again? apparently not. Since
+                        ‘disabled’ is only an attribute, There is no logic included into whether a click on this button
+                        should do anything with a disabled property. Dang it’s so obvious now. What I needed to do was
+                        incorporate this logic. How do I tell my program to only do something IF a certain condition is
+                        met? When all else fails a good ol’ If else statement tells your program when and how. If i now
+                        tell my button that upon click IF e.target.disabled === false then proceed to execute code, then
+                        set e.target.disabled = true. So now in that split second after the first click, if the user
+                        clicks again, the event listener will fire off, the logic will say e.target.disabled === true
+                        and will not execute any of the code. “Woohoo!” Problem solved and I was able to move on to my
+                        many other headaches.</p>
+                    <h3 class="article-subheading">conclusion in.. i mean in conclusion..</h3>
+                    <p>In conclusion, not all things are as easy as brush your teeth before you go to work. Code can
+                        very quickly get very complicated and it is SUPER EASY to lose track of the order in which
+                        things are happening. If it helps at all, i say they best way to ensure you are executing in the
+                        right order and getting the desired output even when you have been up since 6am and it is now
+                        9pm and your brain has checked out for the night is to write things down in a list in order of
+                        occurrence; then decide what should be happening and when. Make the proper adjustments. Take
+                        your time to ensure proper rhythm and execution flow!
+
+                        Also if that doesn’t work just erase it all and start over…. 🤣</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

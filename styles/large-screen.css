@@ -1,0 +1,19 @@
+@media screen
+and (min-width:1286px) {
+    
+    body{
+        grid-template-rows: 5vh auto;
+        grid-template-areas: "h h h h h h h h h h h h"
+                             "a a a m m m m m m m m m"
+    }
+
+    .article-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "t3 t4"
+    }
+
+    .blog-card{
+        width: 40%;
+    }
+}
