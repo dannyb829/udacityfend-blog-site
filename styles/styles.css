@@ -1,3 +1,11 @@
+@import url(contact.css);
+@import url(blog-posts.css);
+@import url(article.css);
+@import url(about.css);
+@import url(small-screen.css);
+@import url(medium-screen.css);
+@import url(large-screen.css);
+
 header {
     background-color:#0D001C;
     grid-area: h;
@@ -20,6 +28,7 @@ main {
     background-color: white;
     box-shadow: 1px 0 80px 110px white;
     z-index: 1;
+    overflow: scroll;
     padding: 10px;
 }
 
@@ -28,10 +37,6 @@ body{
     margin: 0;
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows: 5vh 15vh auto;
-    grid-template-areas: "h h h h h h h h h h h h"
-                         "a a a a a a a a a a a a"
-                         "m m m m m m m m m m m m";
     font-family: sans-serif;
 }
 

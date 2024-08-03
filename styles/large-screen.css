@@ -2,7 +2,7 @@
 and (min-width:1286px) {
     
     body{
-        grid-template-rows: 5vh auto;
+        grid-template-rows: 5vh 95vh;
         grid-template-areas: "h h h h h h h h h h h h"
                              "a a a m m m m m m m m m"
     }

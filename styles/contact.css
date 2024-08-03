@@ -32,3 +32,8 @@
     font-size: 2rem;
     padding-left: 15px;
 }
+
+#contact-small {
+    margin: 20px 0px; 
+    font-weight: lighter;
+}
