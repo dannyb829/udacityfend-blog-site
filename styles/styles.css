@@ -95,5 +95,8 @@ main {
     color: purple;
 }
 
+blockquote {
+    margin: 50px;
+}
 
 

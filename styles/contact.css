@@ -37,3 +37,22 @@
     margin: 20px 0px; 
     font-weight: lighter;
 }
+
+#contact-fig {
+    background-image: url("https://as1.ftcdn.net/v2/jpg/02/90/42/72/1000_F_290427206_rpE61ruzRihqe0MvYQuBpDD5H2jZmZOT.jpg" );
+    background-position: cover;
+    height: 200px;
+}
+
+figure {
+    margin: 20px 0;
+    width: 94%;
+
+}
+
+figcaption {
+    color:white;
+    font-weight: bold;
+    font-size: xx-large;
+    padding: 10px;
+}
