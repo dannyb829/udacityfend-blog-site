@@ -16,7 +16,8 @@
 
 .contact-link:hover {
     transform: scale(1.01);
-    transition-duration: .5s;
+    background-color: #F8C8DC;
+    transition-duration: .3s;
 }
 
 .contact-icon {
