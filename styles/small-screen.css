@@ -1,10 +1,11 @@
 @media screen and (max-width:750px) {
 
     body {
-        grid-template-rows: 5vh 15vh auto;
+        grid-template-rows: 5vh 15vh 75vh 5vh;
         grid-template-areas: "h h h h h h h h h h h h"
                              "a a a a a a a a a a a a"
-                             "m m m m m m m m m m m m";
+                             "m m m m m m m m m m m m"
+                             "f f f f f f f f f f f f";
     }
 
     .blog-container{

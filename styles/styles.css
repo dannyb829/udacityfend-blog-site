@@ -99,4 +99,10 @@ blockquote {
     margin: 50px;
 }
 
+#footer-bottom {
+    grid-area: f;
+    background-color: #0D001C;
+    z-index: 2;
+}
+
 

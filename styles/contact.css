@@ -21,7 +21,6 @@
 
 .contact-icon {
     max-width: 3rem;
-    border-radius: 1rem;
     filter: invert(98%) sepia(37%) saturate(2%) hue-rotate(288deg) brightness(110%) contrast(101%);
 }
 

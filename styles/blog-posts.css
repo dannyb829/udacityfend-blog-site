@@ -40,7 +40,7 @@
 
 .blog-link:hover {
     color: #0D001C;
-    background-color: pink;
+    background-color: #F8C8DC	;
     transition-duration: .5s;
 }
 

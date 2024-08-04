@@ -54,3 +54,20 @@
     font-size: 1.5em;
     font-weight: lighter;
 }
+
+.social-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.social-icon {
+    max-width: 4rem;
+    margin:10px;
+    filter: invert(3%) sepia(85%) saturate(4025%) hue-rotate(209deg) brightness(94%) contrast(119%);
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    filter: brightness(0) saturate(100%) invert(86%) sepia(5%) saturate(1594%) hue-rotate(293deg) brightness(100%) contrast(96%);
+    transition-duration: .5s;
+}
