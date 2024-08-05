@@ -14,6 +14,10 @@ and (min-width:1286px) {
         grid-template-areas: "t3 t4"
     }
 
+    .article-left {
+        border-right: 1px solid purple;
+    }
+
     .blog-card{
         width: 40%;
     }

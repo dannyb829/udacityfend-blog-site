@@ -16,7 +16,7 @@
 
 .contact-link:hover {
     transform: scale(1.01);
-    background-color: #F8C8DC;
+    background-color: purple;
     transition-duration: .3s;
 }
 
@@ -42,6 +42,8 @@
     background-image: url("https://as1.ftcdn.net/v2/jpg/02/90/42/72/1000_F_290427206_rpE61ruzRihqe0MvYQuBpDD5H2jZmZOT.jpg" );
     background-position: cover;
     height: 200px;
+    border: 5px solid purple;
+    border-radius: 1px;
 }
 
 figure {

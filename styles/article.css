@@ -30,7 +30,8 @@
 .article-image {
     background-size:cover;
     overflow: hidden;
-
+    border: 5px solid purple;
+    border-radius: 1px;
     grid-area: t1
 }
 
@@ -68,6 +69,6 @@
 
 .social-icon:hover {
     transform: scale(1.1);
-    filter: brightness(0) saturate(100%) invert(86%) sepia(5%) saturate(1594%) hue-rotate(293deg) brightness(100%) contrast(96%);
+    filter: brightness(0) saturate(100%) invert(9%) sepia(86%) saturate(5819%) hue-rotate(299deg) brightness(88%) contrast(101%);
     transition-duration: .5s;
 }
